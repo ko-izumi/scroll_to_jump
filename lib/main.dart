@@ -28,15 +28,9 @@ class MyApp extends StatelessWidget {
   }
 }
 
-/// ※StatefulWidgetでないと、ジャンプしないので注意
-class ScrollWidget extends StatefulWidget {
+class ScrollWidget extends StatelessWidget {
   const ScrollWidget({Key? key}) : super(key: key);
 
-  @override
-  State<ScrollWidget> createState() => _ScrollWidgetState();
-}
-
-class _ScrollWidgetState extends State<ScrollWidget> {
   @override
   Widget build(BuildContext context) {
     final controller = AutoScrollController();
